@@ -1,0 +1,12 @@
+[0m16:36:51.204768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223CD560C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223CA6EF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223CA6CA10>]}
+
+
+============================== 16:36:51.229173 | 4c9eb95b-7007-479b-b334-a81165cf717d ==============================
+[0m16:36:51.229173 [info ] [MainThread]: Running with dbt=1.8.8
+[0m16:36:51.230171 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vitor\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init pipeline', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:36:51.269387 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/vitor/.dbt')}
+[0m16:36:51.271315 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m16:36:51.272876 [info ] [MainThread]: A project called pipeline already exists here.
+[0m16:36:51.273909 [debug] [MainThread]: Command `dbt init` succeeded at 16:36:51.273909 after 0.19 seconds
+[0m16:36:51.273909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223CD1FF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223D179520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223CAA20C0>]}
+[0m16:36:51.275055 [debug] [MainThread]: Flushing usage events
