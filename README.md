@@ -24,22 +24,22 @@
 
 <h2>Arquitetura do Projeto</h2>
 
-    <p>Extração de Dados</p>
-
+    <h3>Extração de Dados</h3>
+<ul>
 <li>Coleta dos dados disponíveis no site da ANS por meio de scripts automatizados, configurados e monitorados no Prefect.</li>
-
-    <p>Carga no Banco de Dados.</p>
-
+</ul>
+    <h3>Carga no Banco de Dados.</p>
+<ul>
 <li>Os dados extraídos são inseridos em uma tabela bruta no PostgreSQL, utilizando Prefect para orquestrar o processo.</li>
-
-    <p>Transformação com DBT</p>
-
+</ul>
+    <h3>Transformação com DBT</p>
+<ul>
 <li>DBT é usado para mapear e transformar os dados, criando uma tabela derivada que apresenta o total de planos categorizados por tipo no mês de dezembro de 2019.</li>
-
-    <p>Validação e Monitoramento</p>
-
+</ul>
+    <h3>Validação e Monitoramento</p>
+<ul>
 <li>Validamos os resultados finais com consultas SQL e integramos logs detalhados para monitoramento no Prefect.</li>
-
+</ul>
 
 <h2>Como Executar o Projeto</h2>
 
