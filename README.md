@@ -1,76 +1,73 @@
-<h1>Pipeline de Dados com Prefect, DBT e PostgreSQL</h1>
-Visão Geral do Projeto
-Este projeto demonstra a criação de uma pipeline de dados completa e automatizada, usando Prefect para orquestração, DBT para transformação e PostgreSQL para armazenamento. O objetivo é coletar e analisar dados do site da ANS (Agência Nacional de Saúde Suplementar), com foco na criação de uma tabela derivada que apresenta o total de planos de saúde por categoria no mês de dezembro de 2019.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #0073e6;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Projeto!</h1>
+    <p>Este projeto tem como objetivo <span class="highlight">[descreva o objetivo principal]</span>.</p>
 
-Objetivo do Projeto
-Automatizar o fluxo de dados: desde a extração até a transformação e armazenamento.
-Fornecer insights relevantes: criar uma tabela derivada com informações categorizadas sobre planos de saúde.
-Demonstrar habilidades técnicas: implementação prática de ferramentas essenciais para engenharia de dados.
-Tecnologias Utilizadas
-Prefect: Ferramenta de orquestração de workflows para gerenciar o fluxo de dados de forma confiável e escalável.
-DBT (Data Build Tool): Utilizado para transformar os dados brutos em tabelas estruturadas e análises significativas.
-PostgreSQL: Banco de dados relacional usado para armazenamento e consulta de dados.
-Docker: Para configurar e gerenciar ambientes consistentes.
-Arquitetura do Projeto
-Extração de Dados
+    <h2>Funcionalidades Principais</h2>
+    <ul>
+        <li><span class="highlight">Funcionalidade 1:</span> [Descrição breve da funcionalidade]</li>
+        <li><span class="highlight">Funcionalidade 2:</span> [Descrição breve da funcionalidade]</li>
+        <li><span class="highlight">Funcionalidade 3:</span> [Descrição breve da funcionalidade]</li>
+    </ul>
 
-Coleta dos dados disponíveis no site da ANS por meio de scripts automatizados, configurados e monitorados no Prefect.
-Carga no Banco de Dados
+    <h2>Instruções de Instalação</h2>
+    <p>Siga os passos abaixo para instalar o projeto:</p>
+    <ol>
+        <li>Clone este repositório: <code>git clone https://github.com/seuusuario/seuprojeto.git</code></li>
+        <li>Navegue até o diretório do projeto: <code>cd seuprojeto</code></li>
+        <li>Instale as dependências: <code>npm install</code></li>
+    </ol>
 
-Os dados extraídos são inseridos em uma tabela bruta no PostgreSQL, utilizando Prefect para orquestrar o processo.
-Transformação com DBT
+    <h2>Uso</h2>
+    <p>Para iniciar o projeto, execute o seguinte comando:</p>
+    <code>npm start</code>
 
-DBT é usado para mapear e transformar os dados, criando uma tabela derivada que apresenta o total de planos categorizados por tipo no mês de dezembro de 2019.
-Validação e Monitoramento
+    <h2>Contribuição</h2>
+    <p>Se você deseja contribuir, siga estas etapas:</p>
+    <ol>
+        <li>Faça um fork do repositório.</li>
+        <li>Crie uma branch para sua funcionalidade: <code>git checkout -b minha-nova-feature</code></li>
+        <li>Faça o commit de suas alterações: <code>git commit -m "Adiciona minha nova feature"</code></li>
+        <li>Faça o push para a branch: <code>git push origin minha-nova-feature</code></li>
+        <li>Abra um Pull Request.</li>
+    </ol>
 
-Validamos os resultados finais com consultas SQL e integramos logs detalhados para monitoramento no Prefect.
-Como Executar o Projeto
-Pré-requisitos
-Docker e Docker Compose instalados.
-PostgreSQL configurado.
-Prefect e DBT instalados no ambiente.
-Passos para Rodar o Projeto
-Clonar o Repositório
-
-bash
-Copiar código
-git clone https://github.com/seu-usuario/pipeline-prefect-dbt.git  
-cd pipeline-prefect-dbt  
-Subir o Ambiente Docker
-
-bash
-Copiar código
-docker-compose up -d  
-Executar o Flow do Prefect
-Configure o fluxo no Prefect e execute:
-
-bash
-Copiar código
-prefect deployment run flow_name  
-Transformação com DBT
-Dentro do container DBT, execute os comandos para gerar as tabelas derivadas:
-
-bash
-Copiar código
-dbt run  
-dbt test  
-Verificar os Resultados
-Realize consultas no PostgreSQL para verificar a tabela derivada:
-
-sql
-Copiar código
-SELECT * FROM tabela_derivada;  
-Resultados e Aprendizados
-Resultados:
-
-Tabela derivada criada com sucesso, apresentando o total de planos por categoria em dezembro de 2019.
-Pipeline modular e escalável, facilitando ajustes futuros.
-Aprendizados:
-
-Orquestração eficiente de workflows com Prefect.
-Transformações avançadas de dados com DBT.
-Integração e manipulação de dados com PostgreSQL.
-Possíveis Extensões do Projeto
-Adicionar visualização dos dados utilizando Apache Superset ou Metabase.
-Implementar monitoramento em tempo real para alterações nos dados da ANS.
-Otimizar a pipeline para suportar múltiplos períodos de tempo e categorias adicionais.
+    <h2>Licença</h2>
+    <p>Este projeto está licenciado sob a licença <span class="highlight">[nome da licença]</span>. Veja o arquivo <code>LICENSE</code> para mais detalhes.</p>
+</body>
+</html>
