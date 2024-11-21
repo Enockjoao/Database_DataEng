@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pipeline de Dados com Prefect, DBT e PostgreSQL</title>
 </head>
 <body>
   <h1>Pipeline de Dados com Prefect, DBT e PostgreSQL</h1>
