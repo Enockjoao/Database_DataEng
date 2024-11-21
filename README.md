@@ -59,7 +59,7 @@
   <ol>
     <li>
       <p><strong>Clonar o Repositório:</strong></p>
-      <pre><code>git clone https://github.com/seu-usuario/pipeline-prefect-dbt.git
+      <pre><code>git clone [https://github.com/seu-usuario/pipeline-prefect-dbt.git](https://github.com/Enockjoao/Database_DataEng.git)
 cd pipeline-prefect-dbt
       </code></pre>
     </li>
